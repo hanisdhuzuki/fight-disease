@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Prevention.css">
+    <link rel="stylesheet" href="Footer.css">
+  </head>
+
+  <!-- Start of Navigation Bar -->
+  <body>
+    <div class = "navbar">
+      <a class ="links" id = "home" href="Home.html">HOME</a>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+        <div class= "dropcontent">
+          <a href = "#">HIV/AIDS</a>
+          <a href = "#">TUBERCULOSIS</a>
+          <a href = "#">MALARIA</a>
+          <a href = "#">HEPATITIS</a>
+          <a href = "#">TROPICLE DISEASE</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+        <div class="dropcontent">
+          <a href = "#">VEGETARIAN & VEGAN DIETS</a>
+          <a href = "#">HIGH-PROTEIN DIETS</a>
+          <a href = "#">FAT-FIGHTING DIETS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+        <div class= "dropcontent">
+          <a id="treatmentpage" href = "Treatment.html">TREATMENT</a>
+        </div>
+      </div>
+      <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+    </div>
+
+    <!-- End of Navigation Bar -->
+    <div class="preventionTitle">
+      <h3 id="preventionTitle">PREVENTION</h3>
+      <p id = "opening">Healthy habits can prevent germs and infectious diseases from spreading. People can
+       reduce their risk of contracting or transmitting diseases causing phantogen by following the step below:</p>
+
+    <div class="biggerbox">
+    <div class = "box">
+      <div class = "title">
+        <p>Wash Hands Properly</p>
+      </div>
+      <p id="preventionContent">
+         The usage of soap when washing hands is important in order to kill the bacteria. This is especially
+         important before and after preparing foods, before eating and after using the toilet.</p>
+    </div>
+
+    <div class = "box">
+      <div class = "title">
+        <p>Practice Good Hygiene When <br> Handling Food</p>
+      </div>
+      <p id="preventionContent">
+         Keep counters and other kitchen surfaces clean when preparing meals. In addition, promptly
+         refrigerate leftovers. Don't let cooked foods remain at room temperature for an extended period of time.</p>
+    </div>
+
+    <div class = "box">
+      <div class = "title">
+        <p>Clean and Disinfect Commonly <br> Used Surface</p>
+      </div>
+      <p id="preventionContent">
+         The commonly used surfaces such as include the kitchen and bathroom should be cleaned and difinfect
+         frequently as they are the two rooms that can have a high concentration of bacteria and other infectious agents.</p>
+    </div>
+
+    <div class = "box">
+      <div class = "title">
+        <p>Get Vaccinated</p>
+      </div>
+      <p id="preventionContent">
+         Immunization can drastically reduce the chances of contracting many diseases.
+         Keep your recommended vaccinations up-to-date. Vaccinating not only protects yourself,
+         but also protects those in the community who are unable to be vaccinated. </p>
+    </div>
+
+    <div class = "box">
+      <div class = "title">
+        <p>Don't Share Personal Belongings</p>
+      </div>
+      <p id="preventionContent">
+         Avoid sharing personal items that can’t be disinfected, like toothbrushes and razors, or sharing towels between washes.
+         This is to avoid the transmission of fungal diseases.</p>
+    </div>
+
+    <div class = "box">
+      <div class = "title">
+        <p>Stay Home When Sick</p>
+      </div>
+      <p id="preventionContent">
+         Don't go to work or class if you're vomiting, have diarrhea or are running a fever.
+         Get some rest to make you get well sooner and you will not spread any germs.</p>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class = "treatment">
+      <div id = "treatment">
+        <a href = "Treatment.html"><p><strong>TREATMENT</strong></p></a>
+      </div>
+      <p>Some communicable diseases cause only mild symptoms that disappear without treatment.
+         Others may cause severe symptoms, or potentially life threatening complications.
+         The treatment for such diseases depends on whether they are bacterial, viral, or fungal.</p>
+        <div class = "img">
+        <div class = "image">
+            <img id = "Antibiotic" src = "Antibiotic.jpg" alt="Antibiotic">
+            <img id = "Antifungal" src = "Antifungal.jpg" alt="Antifungal">
+            <img id = "Antiviral" src = "Antiviral.jpg" alt="Antiviral">
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class = "footer">
+      <div class = "secFooter" >
+        <p> Fight Comunicable Diseases &nbsp |
+            &nbsp Group 2 &nbsp  |
+            &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+          &nbsp © 2021 Fight Communicable Diseases
+        </p>
+      </div>
+    </div>
+    <!-- End of Footer-->
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <img class="modal-content2" id="img02">
+      <img class="modal-content3" id="img03">
+      <div id="caption"></div>
+    </div>
+
+    <!-- Script for the navigation button that contains dropdown-->
+    <script>
+      function btnDiseases() {
+        document.location.href = "Diseases.html";
+      }
+    </script>
+
+    <script>
+      function btnNutritional() {
+        document.location.href = "Nutritional.html";
+      }
+    </script>
+
+    <script>
+      function btnPrevention() {
+        document.location.href = "Prevention.html";
+      }
+    </script>
+
+    <script>
+    // Antibiotic
+      var modal = document.getElementById("myModal");
+
+      var antibiotic = document.getElementById("Antibiotic");
+      var modalBiotic = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+      antibiotic.onclick = function() {
+        modal.style.display = "block";
+        modalBiotic.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Antifungal
+      var modal = document.getElementById("myModal");
+
+      var antifungal = document.getElementById("Antifungal");
+      var modalBiotic = document.getElementById("img02");
+      var captionText = document.getElementById("caption");
+
+      antifungal.onclick = function() {
+        modal.style.display = "block";
+        modalBiotic.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+    </script>
+
+    <script>
+      // Antiviral
+      var modal = document.getElementById("myModal");
+
+      var antiviral = document.getElementById("Antiviral");
+      var modalBiotic = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+
+      antiviral.onclick = function() {
+        modal.style.display = "block";
+        modalBiotic.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      var span = document.getElementsByClassName("close")[0];
+
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+    </script>
+
+  </body>
+</html>

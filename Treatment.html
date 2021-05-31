@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Treatment.css">
+    <link rel="stylesheet" href="Footer.css">
+  </head>
+
+  <body>
+    <div class = "navbar">
+      <a class ="links" id = "home" href="Home.html">HOME</a>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+        <div class= "dropcontent">
+          <a href = "#">HIV/AIDS</a>
+          <a href = "#">TUBERCULOSIS</a>
+          <a href = "#">MALARIA</a>
+          <a href = "#">HEPATITIS</a>
+          <a href = "#">TROPICLE DISEASE</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+        <div class="dropcontent">
+          <a href = "#">VEGETARIAN & VEGAN DIETS</a>
+          <a href = "#">HIGH-PROTEIN DIETS</a>
+          <a href = "#">FAT-FIGHTING DIETS</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+        <div class= "dropcontent">
+          <a id="treatmentpage" href = "Treatment.html">TREATMENT</a>
+        </div>
+      </div>
+      <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+    </div>
+
+    <!-- End of Navigation Bar -->
+    <h3 id = "bigtitle">TREATMENTS</h3>
+    <p>Some communicable diseases cause only mild symptoms that will disappear without any treatment.
+       Others may cause some severe symptoms, or might potentially life threatening complications.
+       The treatment for such diseases depends on whether they are bacterial, viral, or fungal.
+       Theses are the three types of treatment that can be taken by the patient of such diseases:</p>
+
+    <div class="boxcontent" id="boxcontent">
+      <div class="boxcontent2">
+        <h4 class= "smalltitle">Antibiotic</h4>
+        <img id = "Antibiotic2" src = "Antibiotic.jpg" alt="Antibiotic">
+        <p id="treatmentContent"><strong>Bacterial Diseases</strong></p>
+        <p id="treatmentContent2">
+           A person who has a bacterial infection may require a course of antibiotics to help control
+           the infection. These drugs work by killing off the bacteria or preventing them from replicating.
+           When it comes to antibiotics, take your doctor's advice on whether you need them or not. If people
+           overuse antibiotics or use them incorrectly, the bacteria might become resistant. This means that
+           the antibiotic becomes less effective against that type of bacterium, as the bacterium has been
+           able to improve its defenses.</p>
+      </div>
+
+        <hr id="line">
+
+      <div class="boxcontent2">
+        <h4 class= "smalltitle">Antifungal</h4>
+        <img id = "Antifungal2" src = "Antifungal.jpg" alt="Antifungal">
+        <p id="treatmentContent"><strong>Fungal Diseases</strong></p>
+        <p id="treatmentContent2">
+           Antifungal drugs can work in two ways: by directly killing fungal cells or by preventing fungal cells from growing and thriving.
+           The type of drug used and the way it’s administered can depend on the drug and the type and severity of the infection.
+           A severe or chronic fungal infection may require over-the-counter or prescription antifungal medications.
+           These are available in both oral as a topical treatment, or via IV.</p>
+      </div>
+
+        <hr id="line">
+
+      <div class="boxcontent2">
+        <h4 class= "smalltitle">Antiviral</h4>
+        <img id = "Antiviral2" src = "Antiviral.jpg" alt="Antiviral">
+        <p id="treatmentContent"><strong>Viral Diseases</strong></p>
+        <p id="treatmentContent2">
+           Antivirals treat infections by preventing the virus from spreading throughout your body.
+           In other words, they don't kill the virus, outright, which makes developing antivirals tricky.
+           Vaccines are a highly effective method for preventing specific viral infections.
+           When a person receives a vaccine, they are receiving a dead or inactive form of the virus.
+           The immune system responds by producing antibodies capable of killing an active form of the virus in the future.
+           If a person already has a virus, they may require antiviral medications to keep the virus under control.</p>
+      </div>
+    </div>
+
+    <div class = "footer">
+      <div class = "secFooter" >
+        <p> Fight Comunicable Diseases &nbsp |
+            &nbsp Group 2 &nbsp  |
+            &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+            &nbsp © 2021 Fight Communicable Diseases
+        </p>
+      </div>
+    </div>
+
+    <!-- Script for the navigation button that contains dropdown-->
+    <script>
+      function btnDiseases() {
+        document.location.href = "Diseases.html";
+      }
+    </script>
+
+    <script>
+      function btnNutritional() {
+        document.location.href = "Nutritional.html";
+      }
+    </script>
+
+    <script>
+      function btnPrevention() {
+        document.location.href = "Prevention.html";
+      }
+    </script>
+
+  </body>
+</html>
