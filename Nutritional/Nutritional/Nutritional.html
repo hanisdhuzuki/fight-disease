@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="link.css">
+
+    <style>
+      .c {
+        position: absolute;
+        right: 80px;
+        top: 459px;
+        width: 300px;
+        height: 865px;
+        padding: 30px;
+        background-color:#F4F3F2;
+        text-align: center;
+        font-family: serif;
+        font-size: 18px;
+      }
+
+      .a {
+        line-height: 1.6;
+      }
+
+      .row {
+        width: 185%;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      #absolute {
+        position: absolute;
+        left: 335px;
+        width: 400px;
+        padding: 30px;
+        font-size: 18px;
+      }
+
+      .column {
+        float: left;
+        width: 19%;
+        padding: 50px;
+        padding-top: 110px;
+        text-align: justify;
+      }
+
+      .image {
+        margin-left: 30px;
+        text-align: center;
+      }
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+    <div class = "navbar">
+      <a class ="links" id = "home" href="Home.html">HOME</a>
+      <div class="dropdown">
+        <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+        <div class= "dropcontent">
+          <a href = "#">HIV/AIDS</a>
+          <a href = "#">TUBERCULOSIS</a>
+          <a href = "#">MALARIA</a>
+          <a href = "#">HEPATITIS</a>
+          <a href = "#">TROPICLE DISEASE</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+        <div class="dropcontent">
+          <a href = "#">VEGETARIAN & VEGAN DIETS</a>
+          <a href = "#">HIGH-PROTEIN DIETS</a>
+          <a href = "#">FAT-FIGHTING DIETS</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+        <div class= "dropcontent">
+          <a href = "#">TREATMENT</a>
+        </div>
+      </div>
+      <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+    </div>
+
+    <script>
+      function btnDiseases() {
+        document.location.href = "Diseases.html";
+      }
+
+      function btnNutritional() {
+        document.location.href = "Nutritional.html";
+      }
+
+      function btnPrevention() {
+        document.location.href = "Prevention.html";
+      }
+    </script>
+
+  <div class="c">RECOMMENDED FOR YOU<br><br>
+      <img src="vegetarian.jpg" alt="vegetarian" width="200" height="150">
+
+      <p><a class ="link" href = "https://www.webmd.com/food-recipes/guide/vegetarian-and-vegan-diet">ARTICLE<br>
+          Vegetarian & Vegan Diets</a></p><br>
+
+      <img src="protein.jpg" alt="protein" width="200" height="150">
+      <p><a class ="link" href = "https://www.webmd.com/diet/ss/slideshow-high-protein-diet">SLIDESHOW<br>
+          High-Protein</a></p><br>
+
+      <img src="fats.jpg" alt="fats" width="200" height="150">
+      <p><a class ="link" href = "https://www.webmd.com/diet/ss/slideshow-fat-fighting-foods">SLIDESHOW<br>
+          Fat-fighting Foods</a></p>
+  </div>
+
+<div class = "a">
+  <div class="row">
+    <p id = "absolute">Nutrition - Disease Fighting Food</p>
+
+    <div class = "column">
+      <div class = "image">
+        <img src="berries.jpg" alt="berries" width="350" height="190">
+        <p><i>Berries</i></p>
+      </div>
+
+      <ul>
+        <li> Berries are an excellent source of disease-fighting
+        antioxidants.</li>
+        <li>The color of berries comes from
+        the pigment anthocyanin, an antioxidant that helps
+        neutralize "free radicals" that can help lead to chronic
+        diseases.</li><br><br>
+      </ul>
+
+      <div class = "image">
+        <img src="sweet potatoes.jpg" alt="sweetpotato" width="350" height="190">
+        <p><i>Sweet Potatoes</i></p>
+      </div>
+      <ul>
+        <li>These luscious orange tubers are boasting a wealth of antioxidants.</li>
+        <li>The fiber in these promotes a healthy digestive tract.</li>
+        <li>The antioxidants play a role in preventing heart disease and cancer.</li> <br><br>
+      </ul>
+    </div>
+
+    <div class="column" >
+      <div class = "image">
+        <img src="dairy.jpg" alt="Dairy" width="350" height="190">
+          <p><i>Dairy</i></p>
+      </div>
+      <ul>
+        <li>Dairy foods are the best food source of dietary calcium and have plenty protein, minerals.</li>
+        <li>Key to fight the osteoporosis disease</li>
+        <li>Three daily servings of low-fat dairy help to keep bones strong.</li><br><br>
+      </ul>
+
+      <div class = "image">
+        <img src="tomatoes.jpg" alt="tomatoes" width="350" height="190">
+        <p><i>Tomatoes</i></p>
+      </div>
+      <ul>
+        <li>These red-hot fruits of summer are bursting with flavor and lycopene,
+          an antioxidant that may help protect against some cancers.</li>
+        <li>They deliver an abundance of vitamins A and C, potassium and phytochemicals.</li><br><br>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class = "footer">
+  <div class = "secFooter" >
+    <p> Fight Comunicable Diseases &nbsp |
+        &nbsp Group 2 &nbsp  |
+        &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+        &nbsp © 2021 Fight Communicable Diseases </p>
+  </div>
+</div>
+
+  </body>
+</html>
