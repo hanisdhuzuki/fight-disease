@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--header/footer-->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+
+    <meta charset="utf-8">
+    <title>List of Diseases</title><link rel="stylesheet" href="diseases.css">
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+      <body>
+        <div class = "navbar">
+          <a class ="links" id = "home" href="Home.html">HOME</a>
+          <div class="dropdown">
+            <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+            <div class= "dropcontent">
+              <a href = "#">HIV/AIDS</a>
+              <a href = "#">TUBERCULOSIS</a>
+              <a href = "#">MALARIA</a>
+              <a href = "#">HEPATITIS</a>
+              <a href = "#">TROPICLE DISEASE</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+            <div class="dropcontent">
+              <a href = "#">VEGETARIAN & VEGAN DIETS</a>
+              <a href = "#">HIGH-PROTEIN DIETS</a>
+              <a href = "#">FAT-FIGHTING DIETS</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+            <div class= "dropcontent">
+              <a href = "#">TREATMENT</a>
+            </div>
+          </div>
+          <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+        </div>
+
+    <!-- Script for the navigation button that contains dropdown-->
+        <script>
+          function btnDiseases() {
+            document.location.href = "Diseases.html";
+          }
+        </script>
+        <script>
+          function btnNutritional() {
+            document.location.href = "Nutritional.html";
+          }
+        </script>
+        <script>
+          function btnPrevention() {
+            document.location.href = "Prevention.html";
+          }
+        </script>
+      </body>
+    </html>
+
+<!-- list of Diseases section -->
+
+<div class="communicable">
+  <div class="content">
+    <h1>Communicable Diseases</h1>
+    <h2>Goal 3. Ensure healthy lives and promote well-being for all at all ages</h2>
+    <p><i>Target 3.3: By 2030, end the epidemics of AIDS, tuberculosis, malaria and neglected tropical diseases and combat hepatitis, water-borne diseases and other communicable diseases.</i></p>
+
+  </div>
+
+</div>
+
+  <div class="listbox">
+    <h2 id="title">What are the communicable diseases?</h2>
+    <ul style="list-style-type:none;">
+      <!--hiv/aids-->
+      <li>
+        <div id="HIV/AIDS" class="box">
+          <h3>HIV/AIDS</h3>
+          <div class="explain">
+            <div class="video">
+              <h2>What is HIV/AIDS?</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EG3h71vwzYc"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+            </div>
+
+            <div class="desc">
+                <h2>SDG Indicator 3.3.1</h2>
+                <h3>Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations</h3>
+                <p>Goal: The target 2030 is to "end the epidemic of HIV" across all countries. The targeted level of reduction, however, is not defined.
+                <p>UNAIDS has set a target (not specifically related to the SDGs) of reducing to less than 200,000 new infections globally among adults by 2030. This would mean a reduction to 0.02 new cases per 1,000 people globally in 2030.</p>
+            </div>
+          </div>
+
+        </div>
+      </li>
+
+        <!--tb-->
+      <li>
+          <div id="Tb" class="box">
+            <h3>TUBERCULOSIS</h3>
+            <div class="explain">
+              <div class="video">
+                <h2>What is tuberculosis?</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N0Gv96uDctM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="desc">
+                  <h2>SDG Indicator 3.3.2</h2>
+                  <h3>Tuberculosis incidence per 100,000 population</h3>
+                  <p>Goal: The 2030 target is to "end the epidemic of tuberculosis (TB)" in all countries. The targeted level of reduction, however, is not defined. </p>
+                  <p>The World Health Organization's Stop TB Partnership has
+                    <a href="https://www.who.int/tb/strategy/en/">set a target</a>
+                    (not specifically related to the SDGs) of reducing national incidence of TB to fewer than 20 cases per 100,000 by 2030.</p>
+
+              </div>
+            </div>
+
+          </div>
+      </li>
+
+    <!--malaria-->
+    <li>
+      <div id="malaria" class="box">
+        <h3>MALARIA</h3>
+        <div class="explain">
+        <div class="video">
+            <h2>What is malaria?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BVRnNbb9cLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="desc">
+              <h2>SDG Indicator 3.3.3</h2>
+              <h3>Malaria incidence per 1,000 population</h3>
+              <p>Goal: By 2030 "end the epidemic of malaria" in all countries. The targeted level of reduction, however, is not defined. </p>
+              <p>The
+                <a href="https://www.who.int/malaria/areas/global_targets/en/">WHO Global Technical Strategy</a>
+                has set a target of reducing incidence by 90 percent by 2030. This would infer a target of 9 or fewer cases of malaria per 1,000 people globally in 2030.</p>
+          </div>
+        </div>
+        <div class="refer">
+          <p><i>Visit <a href="https://sdg-tracker.org/good-health#3.3">SDG Tracker of Target 3.3</a>
+          for more information! </i></p>
+        </div>
+
+      </div>
+    </li>
+
+    <!--hepatitis b-->
+    <li>
+      <div id="HepaB" class="box">
+        <h3>HEPATITIS B</h3>
+        <div class="explain">
+          <div class="video">
+            <h2>What is Hepatitis B?</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ENlo5JOwL2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="desc">
+              <h2>SDG Indicator 3.3.4</h2>
+              <h3>Hepatitis B incidence per 100,000 population</h3>
+              <p>Goal: By 2030 "combat hepatitis" in all countries with a focus on hepatitis B. The targeted level of reduction, however, is not defined. </p>
+          </div>
+        </div>
+
+      </div>
+    </li>
+
+    <!--tropical-->
+    <li>
+    <div id="tropical" class="box">
+      <h3>NEGLECTED TROPICAL DISEASES</h3>
+      <div class="explain">
+        <div class="video">
+          <h2>What are the neglected tropical diseases?</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qNWWrDBRBqk"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="desc">
+            <h2>SDG Indicator 3.3.5</h2>
+            <h3>Number of people requiring interventions against neglected tropical diseases</h3>
+            <p>This is defined as the number of people who require interventions (treatment and care) for any of the 15 neglected tropical diseases (NTDs)
+            <a href="https://www.who.int/teams/control-of-neglected-tropical-diseases">identified by the WHO NTD Roadmap</a>
+              and World Health Assembly resolutions. Treatment and care is broadly defined to allow for preventive, curative, surgical or rehabilitative treatment and care.</p>
+            <p>Goal: By 2030 "end the epidemic of neglected tropical diseases (NTDs)" in all countries. The targeted level of reduction, however, is not defined.</p>
+        </div>
+      </div>
+    </div>
+
+    </li>
+  </ul>
+
+  </div>
+  <div class="refer">
+    <p><i>Visit <a href="https://sdg-tracker.org/good-health#3.3">SDG Tracker of Target 3.3</a>
+    for more information on communicable diseases and Sustainable Development Goal Target 3.3! </i></p>
+  </div>
+
+  </body>
+</html>
+<!--end of List of Diseases section-->
+<!--footer-->
+<body>
+  <div class = "footer">
+    <div class = "secFooter" >
+      <p> Fight Comunicable Diseases &nbsp |
+          &nbsp Group 2 &nbsp  |
+          &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+          &nbsp © 2021 Fight Communicable Diseases </p>
+    </div>
+  </div>
+</body>
