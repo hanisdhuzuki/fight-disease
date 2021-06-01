@@ -34,7 +34,7 @@ a{
 }
 
 .listbox{
-  background-color: #C4F3F6;
+  background-color: white;
   padding: 200px;
   align-items: center;
 }
@@ -44,7 +44,7 @@ a{
   max-width: 100%; height: auto;
   margin: 20px;
   padding: 25px;
-  background-color: white;
+  background-color: #c4f3f6;
   display: block; //updown
   align-items: center;
   justify-content: center;
@@ -82,6 +82,6 @@ a{
 .refer{
   text-align: center;
   text-decoration: none;
-  background-color: #FF9C6E;
+  background-color: #c4f3f9;
   padding: 15px;
 }
