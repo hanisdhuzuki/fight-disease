@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--link start-->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="link.css">
+    <link rel="stylesheet" href="home.css">
+    <!--link end-->
+  </head>
+  <!--body start-->
+  <body>
+    <!--header start-->
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+  <div class = "navbar">
+       <a class ="links" id = "home" href="Home.html">HOME</a>
+       <div class="dropdown">
+         <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+         <div class= "dropcontent">
+               <a href = "Diseases.html#HIV/AIDS">HIV/AIDS</a>
+               <a href = "Diseases.html#Tb">TUBERCULOSIS</a>
+               <a href = "Diseases.html#malaria">MALARIA</a>
+               <a href = "Diseases.html#HepaB">HEPATITIS B</a>
+               <a href = "Diseases.html#tropical">TROPICLE DISEASE</a>
+         </div>
+       </div>
+
+       <div class="dropdown">
+         <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+         <div class="dropcontent">
+           <a href = "https://www.webmd.com/food-recipes/guide/vegetarian-and-vegan-diet" target="_blank">VEGETARIAN & VEGAN DIETS</a>
+           <a href = "https://www.webmd.com/diet/ss/slideshow-high-protein-diet" target="_blank">HIGH-PROTEIN DIETS</a>
+           <a href = "https://www.webmd.com/diet/ss/slideshow-fat-fighting-foods" target="_blank">FAT-FIGHTING DIETS</a>
+         </div>
+       </div>
+
+       <div class="dropdown">
+         <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+         <div class= "dropcontent">
+           <a href = "Treatment.html">TREATMENT</a>
+         </div>
+       </div>
+       <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+     </div>
+     <!--javacsript start-->
+     <script>
+       function btnDiseases() {
+         document.location.href = "Diseases.html";
+       }
+
+       function btnNutritional() {
+         document.location.href = "Nutritional.html";
+       }
+
+       function btnPrevention() {
+         document.location.href = "Prevention.html";
+       }
+     </script>
+     <!--javacsript end-->
+
+     <!--header end-->
+
+    <div class="row-section">
+    	<div class="title">
+    		<h1>What Are Communicable Diseases?</h1>
+	    </div>
+	    <div class="images-row">
+      <div style="text-align:center">
+        <!--video start-->
+          <video id="video1" width="420" poster="CD.jpg" class="video1">
+            <source src="CD.mp4" type="video/mp4">
+            <source src="CD.ogg" type="video/ogg">
+          </video>
+          <br><br>
+            <button onclick="playPause()" class="button1">Play/Pause</button>
+            <button onclick="makeBig()" class="button2">Big</button>
+            <button onclick="makeSmall()" class="button3">Small</button>
+            <button onclick="makeNormal()" class="button4">Normal</button>
+      </div>
+      <!--Video javacsript start-->
+        <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+          if (myVideo.paused)
+            myVideo.play();
+          else
+            myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 720;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+        </script>
+        <!--Video javacsript end-->
+        <!--video end-->
+        <br><br>
+	    	<img src="IM1.jpg" width="350" height="190" >
+        <img src="IM3.jpg" width="350" height="190" >
+	    	<img src="IM2.jpg" width="350" height="190" >
+	    </div>
+	    <div class="buttom">
+	    	<a class="btn-btn" href="https://www.medicalnewstoday.com/articles/communicable-diseases">Find Out More</a>
+	    </div>
+    </div>
+
+    <div class="row-section">
+    	<div class="title">
+    		<h1>News Feed Of Recent Diseases</h1>
+	    </div>
+	    <div class="images-row">
+	    	<img src="covid.jpg" width="350" height="190" >
+	    	<img src="blackfungas.jpg" width="350" height="190" >
+	    	<img src="hiv.jpg" width="350" height="190" >
+	    </div>
+	    <div class="buttom">
+	    	<a class="btn-btn" href="Diseases.html">Find Out More</a>
+	    </div>
+    </div>
+
+    <div class="row-section">
+    	<div class="title">
+			<h1>Doctor's Advice</h1>
+	    </div>
+    	<div class="block-section">
+		    <div class="content-row">
+		    	<div class="block-row">
+		    		<img src="m.jpg" width="250" height="200" >
+		    	</div>
+		    	<div class="block-row">
+		    		<p>
+		    			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni expedita culpa praesentium aliquam molestiae eos eligendi adipisci! Exercitationem, porro molestiae eaque nihil doloribus a quas corrupti deleniti debitis facere!
+		    		</p>
+		    	</div>
+		    </div>
+    	</div>
+    	<div class="block-section">
+		    <div class="content-row">
+		    	<div class="block-row">
+		    		<img src="f.jpg" width="250" height="200" >
+		    	</div>
+		    	<div class="block-row">
+		    		<p>
+		    			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni expedita culpa praesentium aliquam molestiae eos eligendi adipisci! Exercitationem, porro molestiae eaque nihil doloribus a quas corrupti deleniti debitis facere!
+		    		</p>
+		    	</div>
+		    </div>
+    	</div>
+    </div>
+
+<!--footer start-->
+
+    <div class = "footer">
+	  <div class = "secFooter" >
+	    <p> Fight Comunicable Diseases &nbsp |
+	        &nbsp Group 2 &nbsp  |
+	        &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+	        &nbsp © 2021 Fight Communicable Diseases </p>
+	  </div>
+	</div>
+  <!--footer end-->
+  </body>
+  <!--body end-->
+</html>
