@@ -1,0 +1,105 @@
+#contactus{
+  background-color: #FF6E4F;
+}
+
+.first-half-container {
+    background: #FF6E4F;
+    width: 450px;
+    height: 350px;
+    padding: 24px 20px;
+    float: left;
+    margin-right: 0.5%;
+    box-shadow: 0px 0px 8px 1px;
+}
+.first-half-container h2{
+    color: #0e0d0d;
+    font-size: 35px;
+    margin-top: 0px;
+}
+.first-half-container dl dt{
+    color: #0c0c0c;
+    padding: 5px 0px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.first-half-container dl dd{
+    color: rgb(8, 8, 8);
+    font-size: 16px;
+    font-weight: 400;
+}
+.section-content{
+    margin: 50px 0px;
+}
+.row-block .contact-form{
+  box-shadow: 0px 0px 8px 1px;
+}
+.row{
+    width: 1140px;
+    margin: auto;
+}
+.row-block{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.row-block img{
+    width: 70%;
+    margin: 10px 0px;
+    height: 270px;
+}
+.row-block .map{
+    margin: 25px 0px;
+    box-shadow: 0px 0px 8px 1px;
+}
+.contact-form {
+    width: 80%;
+    background: #f0f2f5;
+    padding: 1px 40px 62px 40px;
+    height: auto;
+    box-shadow: 0px 1px 4px rgb(138 151 173);
+}
+
+.contact-form form .form-controle input[type="text"],
+.contact-form form .form-controle input[type="mail"],
+.contact-form form .form-controle textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4px 8px;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+}
+.contact-form form input[type="submit"]{
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    padding: 8px 0px;
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    background: #2e4450;
+    border: 1px solid #2e4450;
+    color: #fff;
+    border-radius: 3px;
+}
+.error textarea,
+.error input{
+    border: 1px solid red;
+}
+small{
+    color: red;
+    font-size: 12px;
+}
+.contact-form form .form-controle{
+    margin: 12px 0px 8px 0px;
+}
+label {
+    color: #1f1e1e;
+    margin: 8px 0px;
+    display: block;
+    font-size: 15px;
+}

@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--link start-->
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="link.css">
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--link end-->
+  </head>
+  <!--body start-->
+  <body>
+    <!--header start-->
+    <img id = "logo" src = "logo.png">
+    <h2>Fight Communicable Diseases</h2>
+    <h5 id = "slogan">Fitter, healthier, happier</h5>
+  <div class = "navbar">
+       <a class ="links" id = "home" href="Home.html">HOME</a>
+       <div class="dropdown">
+         <button class= "dropbtn" id = "diseases" onclick="btnDiseases()">DISEASES</button>
+         <div class= "dropcontent">
+               <a href = "Diseases.html#HIV/AIDS">HIV/AIDS</a>
+               <a href = "Diseases.html#Tb">TUBERCULOSIS</a>
+               <a href = "Diseases.html#malaria">MALARIA</a>
+               <a href = "Diseases.html#HepaB">HEPATITIS B</a>
+               <a href = "Diseases.html#tropical">TROPICLE DISEASE</a>
+         </div>
+       </div>
+
+       <div class="dropdown">
+         <button class= "dropbtn" id = "nutritional" onclick="btnNutritional()">NUTRITIONAL</button>
+         <div class="dropcontent">
+           <a href = "https://www.webmd.com/food-recipes/guide/vegetarian-and-vegan-diet" target="_blank">VEGETARIAN & VEGAN DIETS</a>
+           <a href = "https://www.webmd.com/diet/ss/slideshow-high-protein-diet" target="_blank">HIGH-PROTEIN DIETS</a>
+           <a href = "https://www.webmd.com/diet/ss/slideshow-fat-fighting-foods" target="_blank">FAT-FIGHTING DIETS</a>
+         </div>
+       </div>
+
+       <div class="dropdown">
+         <button class= "dropbtn" id = "prevention" onclick="btnPrevention()">PREVENTION</button>
+         <div class= "dropcontent">
+           <a href = "Treatment.html">TREATMENT</a>
+         </div>
+       </div>
+       <a class ="links" id = "contactus" href="ContactUs.html">CONTACT US</a>
+     </div>
+     <!--javacsript start-->
+     <script>
+       function btnDiseases() {
+         document.location.href = "Diseases.html";
+       }
+
+       function btnNutritional() {
+         document.location.href = "Nutritional.html";
+       }
+
+       function btnPrevention() {
+         document.location.href = "Prevention.html";
+       }
+     </script>
+     <!--javacsript end-->
+
+     <!--header end-->
+
+
+    <div class="section-content">
+        <div class="row">
+            <div class="row-block">
+              <div class="first-main-container">
+      <div class="first-half-container">
+          <!--About  Us-->
+          <h2>About Us</h2>
+          <dl>
+            <dt><i class="fa fa-user-circle-o" aria-hidden="true"></i> Our Office</dt>
+            <dd><i class="fa fa-envelope" aria-hidden="true"></i>
+                communicablediseaces@gmail.com</dd>
+            <dt><i class="fa fa-superpowers" aria-hidden="true"></i>
+                Business Hour</dt>
+            <dd><i class="fa fa-clock-o" aria-hidden="true"></i>
+                MON-THU : 10AM to 5PM</dd>
+            <dd><i class="fa fa-clock-o" aria-hidden="true"></i>
+                FRI : 10AM to 1PM</dd>
+            <dt><i class="fa fa-phone-square" aria-hidden="true"></i> Call Us (10am to 8pm)</dt>
+            <dd><i class="fa fa-phone" aria-hidden="true"></i>
+                +60170000000</dd>
+          </dl>
+
+      </div>
+      </div>
+            <!--map-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.7944506569984!2d101.71106601408948!3d3.1488611540341607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362c8935509b%3A0xed966c50b0a79fb4!2sPavilion%20Kuala%20Lumpur!5e0!3m2!1sen!2sbd!4v1622642778191!5m2!1sen!2sbd" width="450px" height="290px" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+            </div>
+            <div class="row-block">
+                <div class="contact-form">
+                    <h2>Contact Us</h2>
+                      <!--from start-->
+                    <form action="" id="form">
+
+                        <div class="form-controle">
+                          <label for="name">Full Name</label>
+                          <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                          <small></small>
+                        </div>
+
+
+                        <div class="form-controle">
+                          <label for="mail">Email Address</label>
+                          <input type="mail" name="mail" id="mail" placeholder="Enter Your Email">
+                          <small></small>
+                        </div>
+
+                        <div class="form-controle">
+                          <label for="occupation">Occupation</label>
+                          <input type="text" name="occupation" id="occupation" placeholder="Enter Your Occupation">
+                          <small></small>
+                        </div>
+
+
+                        <div class="form-controle">
+                          <label for="subject">Subject</label>
+                          <input type="text" name="subject" id="subject" placeholder="Enter Subject">
+                          <small></small>
+                        </div>
+
+
+                        <div class="form-controle">
+                          <label for="description">Description</label>
+                          <textarea name="description" id="description" cols="30" rows="6" placeholder="Enter Your Description"></textarea>
+                          <small></small>
+                        </div>
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                    <!--from end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+<div class = "footer">
+    <div class = "secFooter" >
+        <p>
+            Fight Comunicable Diseases &nbsp |
+            &nbsp Group 2 &nbsp  |
+            &nbsp Web Technologies Semester 2, 2020/2021 &nbsp |
+            &nbsp © 2021 Fight Communicable Diseases
+        </p>
+    </div>
+
+  </div>
+  <!--footer end-->
+
+
+<!--from javascript start-->
+  <script>
+      let name = document.getElementById('name');
+      let mail = document.getElementById('mail');
+      let occupation = document.getElementById('occupation');
+      let subject = document.getElementById('subject');
+      let description = document.getElementById('description');
+      let form = document.getElementById('form');
+      let submitMessage = document.getElementById('submit-message');
+      let errors = [];
+      form.addEventListener('submit',(e) => {
+        e.preventDefault();
+        checkinput();
+      });
+
+
+      function checkinput() {
+        let fName = name.value.trim();
+        let email = mail.value.trim();
+        let occu = occupation.value.trim();
+        let sub = subject.value.trim();
+        let desc = description.value.trim();
+
+
+
+
+        if (fName === '') {
+          setError(name,'Name can not be blank');
+
+        }else{
+          setSuccess(name);
+        }
+
+        if (email === '') {
+          setError(mail,'Mail can not be blank');
+
+        } else if(!isEmail(email)) {
+          setError(mail, 'Please enter a valid email');
+          errors.push({text: 'Wrong Mail', el:mail});
+        }else{
+          setSuccess(mail);
+        }
+
+        if (occu === '') {
+          setError(occupation,'Occupation can not be blank');
+
+        }else{
+          setSuccess(occupation);
+        }
+
+        if (sub === '') {
+          setError(subject,'Subject can not be blank');
+
+        }else{
+          setSuccess(subject);
+        }
+
+        if (desc === '') {
+          setError(description,'Description can not be blank');
+
+        }else{
+          setSuccess(description);
+        }
+      }
+
+      function setError(input,message) {
+        let parent = input.parentElement;
+        let smallTag = parent.querySelector('small');
+        smallTag.innerText = message;
+        parent.classList.add('error');
+      }
+      function setSuccess(input) {
+        let parent = input.parentElement;
+        let smallTag = parent.querySelector('small');
+        smallTag.innerText = '';
+        parent.classList.remove('error');
+      }
+
+      function isEmail(email) {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+      }
+  </script>
+  <!--from javascript end-->
+</body>
+<!--body end-->
+</html>
